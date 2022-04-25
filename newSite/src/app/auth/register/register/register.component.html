@@ -1,0 +1,42 @@
+<div class="container">
+    <form [formGroup]="registerForm">
+        <h3>
+            Register to your account
+        </h3>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" formControlName="name">
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" formControlName="username">
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" formControlName="phoneNumber">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" formControlName="email">
+            <div class="danger" *ngIf="registerFormControl['email'] && registerFormControl['email'].invalid && registerFormControl['email'].touched">
+                <div *ngIf="registerFormControl['email'].errors?.['required']">required field*</div>
+                <div *ngIf="registerFormControl['email'].errors?.['email']">not a valid email</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" formControlName="password">
+            <div class="danger" *ngIf="registerForm.get('password')?.errors && registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+                <div *ngIf="registerForm.get('password')?.errors?.['required']">required field*</div>
+                <!-- {{loginForm.get('phone')?.errors|json}} -->
+            </div>
+        </div>
+        <br>
+        <button type="submit" [disabled]="registerForm.invalid" class="btn btn-dark" (click)="register()">Register</button>
+        <div>
+            Already Register? Click
+            <a [routerLink]="['/auth/login']">Here</a>
+        </div>
+    </form>
+</div>
