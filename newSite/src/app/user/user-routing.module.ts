@@ -26,6 +26,11 @@ const routes: Routes = [
         loadChildren:()=>import('./navbar/navbar.module').then(m=>
           m.NavbarModule)
       },
+      {
+        path:'politics',
+        loadChildren:()=>import('./politics/politics.module').then(m=>
+          m.PoliticsModule)
+      }
     ]
   }
 ];

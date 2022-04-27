@@ -18,7 +18,7 @@ var newsSchema = new Schema({
     },
     categories: {
         type: String,
-        enum: ['business', 'politics', 'lifestyle', 'travel']
+        enum: ['business', 'politics', 'lifeStyle', 'travel', 'entertainment', 'international']
     },
     // numberOfRoom: Number,
     // carParking: {
@@ -29,6 +29,8 @@ var newsSchema = new Schema({
     //     type: Boolean,
     //     default: false
     // },
+    tags: String,
+    date: Date,
     title: String,
     description: String,
     // map: {

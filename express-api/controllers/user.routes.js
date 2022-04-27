@@ -41,7 +41,7 @@ router.route('/')
     .get((req, res, next) => {
         userModel.find({})
             .sort({ _id: -1 })
-            .limit(10)
+            // .limit(10)
             .exec((err, users) => {
                 if (err) {
                     return next(err);

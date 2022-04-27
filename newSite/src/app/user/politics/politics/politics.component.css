@@ -1,0 +1,53 @@
+.navbar {
+    height: 50%;
+    background-color: rgb(209, 102, 107);
+    color: white;
+    /* position: fixed; */
+}
+
+h1 {
+    padding-top: 30px;
+    padding-left: 40%;
+    padding-bottom: 30px;
+}
+
+
+/* img {
+    width: 200px;
+    height: 200px;
+} */
+
+a {
+    text-decoration: none;
+}
+
+.cardContainer {
+    padding: 10px;
+}
+
+.card-img {
+    height: fit-content;
+}
+
+.row {
+    padding: 10px;
+}
+
+.description {
+    /* font-size: medium;
+    font-weight: 400; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: 2px solid black; */
+    height: 170px;
+    /* height: 70px; */
+}
+
+.title {
+    overflow: hidden;
+    height: 100px;
+}
+
+.relatedCardBody {
+    height: 200px;
+}

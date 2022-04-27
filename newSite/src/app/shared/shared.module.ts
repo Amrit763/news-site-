@@ -6,6 +6,8 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+
 import { MsgServiceService } from './service/msg-service.service';
 import { SharedRoutingModule } from './shared-routing.module';
 import { SharedComponent } from './shared/shared.component';
@@ -19,13 +21,15 @@ import { SharedComponent } from './shared/shared.component';
     SharedRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers:[MsgServiceService],
   exports:[
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ]
 })
 export class SharedModule { }

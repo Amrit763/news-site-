@@ -12,7 +12,12 @@
 
             </tr>
         </thead>
-        <tr *ngFor="let user of allUser">
+        <tr *ngFor="let user of allUser | 
+        paginate: {
+             itemsPerPage: tableSize, 
+             currentPage: page,
+             totalItems: count
+         } let i = index">
             <td class="p-3">{{user.name}}</td>
             <td class="p-3">{{user.email}}</td>
             <td class="p-3">{{user.username}}</td>
@@ -26,4 +31,5 @@
 
         </tr>
     </table>
+    <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)"></pagination-controls>
 </div>

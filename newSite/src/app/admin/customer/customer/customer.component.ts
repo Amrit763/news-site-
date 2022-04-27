@@ -16,6 +16,14 @@ import { AdminServiceService } from '../../adminService/admin-service.service';
 export class CustomerComponent implements OnInit {
 allUser:any;
 id:any;
+
+// pagination
+tableSize: number=10;
+page:number=1;
+count: number= 0;
+// tableSizes:any=[5,10,15,20];
+// showpost:any=[]
+
   constructor(
     public adminService:AdminServiceService,
     public msgService:MsgServiceService,
@@ -31,8 +39,22 @@ id:any;
     this.adminService.getAllUSer()
     .subscribe((data)=>{
       console.log('here data is>>',data)
+      // this.showpost = data;
+      // this.tableSize = this.showpost.length;
+      console.log('length is>>>',this.tableSize)
       this.allUser=data
     })
+  }
+  onTableDataChange(event:any){
+    this.page = event;
+    this.getAllUser();
+    
+  }
+  onTableSizeChange(event:any){
+    this.tableSize = event.target.value;
+    this.page = 1;
+    this.getAllUser();
+
   }
   deleteUser(obj:any){
     // console.log('here id is >>>',obj._id)

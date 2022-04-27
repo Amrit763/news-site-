@@ -44,7 +44,7 @@ export class AddNewsComponent implements OnInit {
       this.newsService.addNews(this.newsForm.value)
       .subscribe(
         (data)=>{
-          this.router.navigate(['/admin'])    
+          // this.router.navigate(['/admin'])    
           console.log('news data is >>>',this.news)
           this.msgService.showSuccess('News added successfully')
         },

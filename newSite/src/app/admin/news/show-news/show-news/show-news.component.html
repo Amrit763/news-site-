@@ -11,10 +11,10 @@
 
             </tr>
         </thead>
-        <tr *ngFor="let news of allNews">
-            <td class="p-3">{{news.title}}</td>
+        <tr *ngFor="let news of allNews" class="description">
+            <td class="p-3 description">{{news.title}}</td>
             <td class="p-3">{{news.image}}</td>
-            <td class="p-3">{{news.description}}</td>
+            <td class="p-3 ">{{news.description}}</td>
             <td class="p-3">{{news.categories}}</td>
             <!-- <td> -->
             <!-- <button type="button" class="btn btn-warning m-2" routerLink='/admin/edit-news/rm/{{room._id}}'>

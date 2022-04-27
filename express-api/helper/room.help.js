@@ -1,12 +1,11 @@
 module.exports = (req, news) => {
     // if (req.price)
     //     room.price = req.price;
-    // if (req.numberOfRoom)
-    //     room.numberOfRoom = req.numberOfRoom;
-    // if (req.carParking)
-    //     room.carParking = req.carParking;
-    // if (req.bikeParking)
-    //     room.bikeParking = req.bikeParking;
+
+    if (req.tags)
+        room.tags = req.tags;
+    if (req.date)
+        room.date = req.date;
     if (req.title)
         news.title = req.title;
     if (req.categories)

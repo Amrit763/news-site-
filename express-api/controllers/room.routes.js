@@ -48,6 +48,7 @@ function imageDelete(req) {
 router.route('/')
     .get((req, res, next) => {
         roomModel.find({})
+            .sort({ _id: -1 })
             .populate('user')
             .exec((err, rooms) => {
                 if (err) {
