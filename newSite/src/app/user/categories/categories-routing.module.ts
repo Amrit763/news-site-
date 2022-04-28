@@ -40,7 +40,7 @@ const routes: Routes = [{
   component:LifeStyleComponent
 },
 {
-  path:'politics-sub',
+  path:'politics-sub/:id',
   component:PoliticsSubComponent
 }
 ];

@@ -7,7 +7,7 @@
     </b>
     <!-- <a class="navbar-brand active text-dark" style="font-size: 25px; font-weight: 500;" >POLITICS</a> -->
 </nav>
-<div class="container" *ngIf="submitting">
+<div class="container">
     <div class="row">
         <div class="col-sm-8">
 
@@ -25,7 +25,7 @@
                             <img class="card-img" src="{{imageUrl}}{{politic.image[0]}}" style="height: 300px;" alt="Suresh Dasari Card">
                         </div>
                         <div class="col-sm-7">
-                            <a routerLink='/user/politics-sub'>
+                            <a routerLink='/user/categories/politics-sub/{{politic._id}}'>
                                 <!-- <a href="" (click)="viewNews()"> -->
                                 <h2 class="card-title title">
                                     <b>
@@ -65,7 +65,7 @@
                     </tr>
                 </thead>
                 <!-- testing -->
-                <tbody>
+                <!-- <tbody>
                     <div class="card" *ngFor="let politic of politics ">
                         <div class="row no-gutters">
 
@@ -90,15 +90,13 @@
                         </div>
                     </div>
 
-                </tbody>
+                </tbody> -->
 
                 <tbody>
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <!-- <img class="card-img" src="{{imageUrl}}{{politic.image[0]}}" style="height: 300px;" alt="Suresh Dasari Card"> -->
-
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{politics[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
@@ -226,39 +224,6 @@
 
 
 
-<div class="container" *ngIf="viewing">
-    <div class="card">
-        <div class="row">
-            <div class="card-header" style="background-color: orange;">
-                <h1 style="text-align: center; color: white;">
-                    <!-- The quick brown fox jumps over the lazy dog -->
-                    {{politics[0].title}}
-                </h1>
-            </div>
-            <img src="../../../../assets/images/DSC_0529.JPG" class="card-img-top img-fluid" alt="...">
-            <div class="col-sm-8">
-
-                <div class="card-body">
-                    <h5>
-                        {{politics[0].description}}
-                        <!-- <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                   -->
-                        <!-- The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps
-                    over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the
-                    lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs -->
-                    </h5>
-                    <a href="#" class="">Go somewhere</a>
-                </div>
-            </div>
-            <div class="col-sm-4" style="background-color: green;">adds</div>
-        </div>
-    </div>
-
-</div>
-
-
-<!-- dashboard page  -->
 <div class="container" *ngIf="viewing">
     <div class="card">
         <div class="row">

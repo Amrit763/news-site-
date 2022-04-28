@@ -70,13 +70,7 @@ international:any;
         if(element.categories=='international'){
           this.international.push(element)
         }
-        // console.log('politics: ',this.politics)
-        // console.log('business: ',this.business)
-        // console.log('lifeStyle: ',this.lifeStyle)
-        // console.log('entertainment: ',this.entertainment)
-        // console.log('travel: ',this.travel)
-        // console.log('international: ',this.international)
-
+     
       })
     })
   }
