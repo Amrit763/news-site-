@@ -7,7 +7,7 @@ import {
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'user/politics',
+    redirectTo:'user/dashboard',
     pathMatch:'full'
   },{
     path:'user',

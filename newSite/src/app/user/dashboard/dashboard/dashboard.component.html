@@ -1,1 +1,675 @@
-<p>user dashboard works</p>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col  m-2">
+            <!-- <img class="card-img" src="{{imageUrl}}{{politic.image[0]}}" style="height: 300px;" alt="Suresh Dasari Card"> -->
+
+            <img src="../../../../assets/images/DSC_0529.JPG" class="img-fluid img-big" style="width: 100%;" alt="">
+        </div>
+        <div class="col-lg-3 col-md-auto  middle-container m-2 ">
+
+
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[0].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{entertainment[0].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{business[0].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{travel[0].title}}
+                </div>
+            </div>
+
+
+
+
+            <div class="d-grid gap-2">
+                <button class="btn btn-dark mt-3" type="button">Show More!</button>
+            </div>
+
+        </div>
+        <div class="col col-lg-3  m-2">
+            <div class="row bg-info myrow">
+                ads1
+            </div>
+            <div class="row bg-warning myrow">
+                ads2
+            </div>
+            <div class="row bg-primary myrow">
+                ads3
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- <div class="col bg-primary" style="border:2px solid dark; height: 100px;">
+    ADs3
+</div> -->
+
+
+
+
+<!-- <div class="container-fluid">
+    <h1 class="bg-danger text-white" style="  padding-left: 10px; margin:10px; height: 50px; border-radius: 10px;">
+        Latest NEWS
+    </h1>
+
+    <owl-carousel-o [options]="customOptions">
+
+        <ng-template carouselSlide>
+            <div class="image-container1">
+
+                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="image-container1">
+
+                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+            </div>
+
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="image-container1">
+
+                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+            </div>
+
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="image-container1">
+
+                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+            </div>
+
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="image-container1">
+
+                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+            </div>
+
+        </ng-template>
+    </owl-carousel-o>
+</div> -->
+
+<!-- politics start -->
+
+<div class="container-fluid">
+    <h1 class=" text-black" style="  padding-left: 10px; margin:10px; border-radius: 10px; height: 50px; background-color: #FFD58A;">
+        POLITICS
+    </h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-auto  middle-container m-2 ">
+
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[0].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[1].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[2].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[3].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[4].title}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-auto  middle-container m-2 ">
+
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[5].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[6].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[7].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[8].title}}
+                </div>
+            </div>
+            <div class="d-flex align-items-center row-small-image">
+                <div class="flex-shrink-0">
+                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3 description">
+                    {{politics[9].title}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-lg-3  m-2">
+            <div class="row bg-info myrow1">
+                ads1
+            </div>
+            <div class="row bg-warning myrow1">
+                ads2
+            </div>
+            <div class="row bg-primary myrow1">
+                ads3
+            </div>
+
+        </div>
+    </div>
+
+    <!-- politics end -->
+
+
+
+    <!-- entertainment start -->
+
+    <div class="container-fluid">
+        <h1 class=" text-black" style="  padding-left: 10px; margin:10px; height: 50px; border-radius: 10px; background-color: #FFD58A;">
+            ENTERTAINMENT
+        </h1>
+
+        <div class="row">
+            <div class="col  m-2">
+                <img src="../../../../assets/images/DSC_0529.JPG" class="img-fluid img-big" style="width: 100%;" alt="">
+            </div>
+            <div class="col-lg-3 col-md-auto  middle-container m-2 ">
+
+
+                <div class="d-flex align-items-center row-small-image">
+                    <div class="flex-shrink-0">
+                        <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description">
+                        {{entertainment[1].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image">
+                    <div class="flex-shrink-0">
+                        <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description">
+                        {{entertainment[2].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image">
+                    <div class="flex-shrink-0">
+                        <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description">
+                        {{entertainment[3].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image">
+                    <div class="flex-shrink-0">
+                        <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description">
+                        {{entertainment[4].title}}
+                    </div>
+                </div>
+
+
+
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-dark mt-3" type="button">Show More!</button>
+                </div>
+
+            </div>
+            <div class="col col-lg-3  m-2">
+                <div class="row bg-info myrow">
+                    ads1
+                </div>
+                <div class="row bg-warning myrow">
+                    ads2
+                </div>
+                <div class="row bg-primary myrow">
+                    ads3
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- business start -->
+
+    <div class="container-fluid">
+        <h1 class="text-black" style="  padding-left: 10px; margin:10px; border-radius: 10px; height: 50px; background-color: #FFD58A">
+            Business
+        </h1>
+        <div class=" row ">
+            <div class="col-lg-4 col-md-auto middle-container m-2 ">
+
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[0].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[1].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[2].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[3].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[4].title}}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-auto middle-container m-2 ">
+
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[5].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[6].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[7].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[8].title}}
+                    </div>
+                </div>
+                <div class="d-flex align-items-center row-small-image ">
+                    <div class="flex-shrink-0 ">
+                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                    </div>
+                    <div class="flex-grow-1 ms-3 description ">
+                        {{business[9].title}}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col col-lg-3 m-2 ">
+                <div class="row bg-info myrow1 ">
+                    ads1
+                </div>
+                <div class="row bg-warning myrow1 ">
+                    ads2
+                </div>
+                <div class="row bg-primary myrow1 ">
+                    ads3
+                </div>
+
+            </div>
+        </div>
+
+        <!-- business end -->
+
+
+        <!-- lifeStyle start -->
+
+        <div class="container-fluid ">
+            <h1 class=" text-black " style=" padding-left: 10px; margin:10px; height: 50px; border-radius: 10px; background-color: #FFD58A; ">
+                Life Style
+            </h1>
+
+            <div class="row ">
+                <div class="col m-2 ">
+                    <img src="../../../../assets/images/DSC_0529.JPG " class="img-fluid img-big " style="width: 100%; " alt=" ">
+                </div>
+                <div class="col-lg-3 col-md-auto middle-container m-2 ">
+
+
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{lifeStyle[1].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{lifeStyle[2].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{lifeStyle[3].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{lifeStyle[4].title}}
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="d-grid gap-2 ">
+                        <button class="btn btn-dark mt-3 " type="button ">Show More!</button>
+                    </div>
+
+                </div>
+                <div class="col col-lg-3 m-2 ">
+                    <div class="row bg-info myrow ">
+                        ads1
+                    </div>
+                    <div class="row bg-warning myrow ">
+                        ads2
+                    </div>
+                    <div class="row bg-primary myrow ">
+                        ads3
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- lifeStyle end -->
+
+        <!-- travel start -->
+
+        <div class="container-fluid">
+            <h1 class="text-black" style="  padding-left: 10px; margin:10px; border-radius: 10px; height: 50px; background-color: #FFD58A">
+                Travel
+            </h1>
+            <div class=" row ">
+                <div class="col-lg-4 col-md-auto middle-container m-2 ">
+
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[0].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[1].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[2].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[3].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[4].title}}
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-auto middle-container m-2 ">
+
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[5].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[6].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[7].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[8].title}}
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center row-small-image ">
+                        <div class="flex-shrink-0 ">
+                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        </div>
+                        <div class="flex-grow-1 ms-3 description ">
+                            {{travel[9].title}}
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col col-lg-3 m-2 ">
+                    <div class="row bg-info myrow1 ">
+                        ads1
+                    </div>
+                    <div class="row bg-warning myrow1 ">
+                        ads2
+                    </div>
+                    <div class="row bg-primary myrow1 ">
+                        ads3
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- travel end -->
+
+
+            <!-- international start -->
+
+            <div class="container-fluid ">
+                <h1 class=" text-black " style=" padding-left: 10px; margin:10px; height: 50px; border-radius: 10px; background-color: #FFD58A; ">
+                    International
+                </h1>
+
+                <div class="row ">
+                    <div class="col m-2 ">
+                        <img src="../../../../assets/images/DSC_0529.JPG " class="img-fluid img-big " style="width: 100%; " alt=" ">
+                    </div>
+                    <div class="col-lg-3 col-md-auto middle-container m-2 ">
+
+
+                        <div class="d-flex align-items-center row-small-image ">
+                            <div class="flex-shrink-0 ">
+                                <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            </div>
+                            <div class="flex-grow-1 ms-3 description ">
+                                {{international[1].title}}
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center row-small-image ">
+                            <div class="flex-shrink-0 ">
+                                <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            </div>
+                            <div class="flex-grow-1 ms-3 description ">
+                                {{international[2].title}}
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center row-small-image ">
+                            <div class="flex-shrink-0 ">
+                                <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            </div>
+                            <div class="flex-grow-1 ms-3 description ">
+                                {{international[3].title}}
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center row-small-image ">
+                            <div class="flex-shrink-0 ">
+                                <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            </div>
+                            <div class="flex-grow-1 ms-3 description ">
+                                {{international[4].title}}
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="d-grid gap-2 ">
+                            <button class="btn btn-dark mt-3 " type="button ">Show More!</button>
+                        </div>
+
+                    </div>
+                    <div class="col col-lg-3 m-2 ">
+                        <div class="row bg-info myrow ">
+                            ads1
+                        </div>
+                        <div class="row bg-warning myrow ">
+                            ads2
+                        </div>
+                        <div class="row bg-primary myrow ">
+                            ads3
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- international end -->

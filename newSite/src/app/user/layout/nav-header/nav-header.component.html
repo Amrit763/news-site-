@@ -1,0 +1,81 @@
+<div class="container-fluid">
+    <div class="row align-items-start">
+        <div class="col-lg-2 m-1">
+            <img src="../../../../assets/logo/final.png" alt="" style="height: 100px; width:100px">
+        </div>
+        <div class="col-lg-9 bg-primary m-2" style="border: 2px solid black">
+            <div style="height: 100px; width: 300px;">
+                ADD BOX
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- <nav class="navbar navbar-expand-lg  text-black bg-warning">
+    <div class="container-fluid">
+        <a class="navbar-brand active text-white" style="font-size: 25px; font-weight: 500;" href="#">NEWS</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item" style="font-size: 18px;">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" [routerLink]="['/user/politics']">Politics</a></li>
+                        <li><a class="dropdown-item" href="#">Business</a></li>
+                        <li><a class="dropdown-item" href="#">Travels</a></li>
+                        <li><a class="dropdown-item" href="#">International</a></li>
+                        <li><a class="dropdown-item" href="#">Entertainment</a></li>
+
+
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="navbar-nav">
+                <a class="nav-link active text-white" [routerLink]="['/auth/register']">Register</a>
+            </div>
+
+        </div>
+    </div>
+</nav> -->
+
+
+<nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: #FF8C00;">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuIcon" aria-controls="menuIcon" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- <div class="input-group" data-bs-target="#carouselExampleControls">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary">search</button>
+        </div> -->
+
+        <div class="collapse navbar-collapse  " id="menuIcon">
+            <div class="navbar-nav">
+                <a class="nav-link active" routerLink="/user/dashboard">Home</a>
+                <a class="nav-link active" routerLink="/user/categories">Politics</a>
+                <a class="nav-link active" routerLink="/user/categories/travels">Travels</a>
+                <a class="nav-link active" routerLink="/user/categories/business">Business</a>
+                <a class="nav-link active" routerLink="/user/categories/entertainment">Entertainment</a>
+                <a class="nav-link active" routerLink="/user/categories/international">International</a>
+
+            </div>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-link active" [routerLink]="['/auth/register']">Register</a>
+            <!-- <a class="nav-link active" href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a> -->
+        </div>
+
+    </div>
+
+</nav>

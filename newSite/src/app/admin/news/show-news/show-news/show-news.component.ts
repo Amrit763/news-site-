@@ -4,6 +4,7 @@ import {
 } from '@angular/core';
 
 import { MsgServiceService } from 'src/app/shared/service/msg-service.service';
+import { environment } from 'src/environments/environment';
 
 import { NewsService } from '../../service/news.service';
 
@@ -13,6 +14,8 @@ import { NewsService } from '../../service/news.service';
   styleUrls: ['./show-news.component.css']
 })
 export class ShowNewsComponent implements OnInit {
+
+imageUrl:any;
 allNews:any;
 politics:any;
 business:any;
@@ -25,6 +28,7 @@ international:any;
     public newsService:NewsService,
     public msgService:MsgServiceService
   ) {
+    this.imageUrl = environment.imageUrl,
     this.politics=[];
     this.business=[];
     this.lifeStyle=[];
@@ -59,25 +63,16 @@ international:any;
         if(element.categories=='international'){
           this.international.push(element)
         }
-        // console.log('politics: ',this.politics)
-        // console.log('business: ',this.business)
-        // console.log('lifeStyle: ',this.lifeStyle)
-        // console.log('entertainment: ',this.entertainment)
-        // console.log('travel: ',this.travel)
-        // console.log('international: ',this.international)
-
       })
     })
   }
+
   getAllNews(){
     this.newsService.get()
     .subscribe((data:any)=>{
       console.log('all news',data);
       this.allNews=data
    }
-  //  ,(err:any)=>{
-  //     console.log('err',err)
-  //   }
     )
   }
   deleteNews(obj:any){

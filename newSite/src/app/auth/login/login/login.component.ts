@@ -46,7 +46,7 @@ user:any;
             // localStorage.setItem('token',data.token)
             // console.log('login matoken >> ',data.token)
             // localStorage.setItem('user',JSON.stringify(data.user))
-            this.router.navigate(['/user/usernav'])
+            this.router.navigate(['/user/dashboard'])
 
           },
           (err)=>{

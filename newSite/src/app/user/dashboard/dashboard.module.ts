@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NewsService } from 'src/app/admin/news/service/news.service';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
@@ -13,7 +15,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule
-  ]
+    SharedModule,
+    CarouselModule
+  ],
+  providers:[NewsService]
 })
 export class DashboardModule { }

@@ -1,0 +1,49 @@
+/* .navPolitics {
+    margin-left: 40%;
+    margin-right: 40%;
+} */
+
+h2 {
+    padding-left: 4%;
+}
+
+
+/* img {
+    width: 200px;
+    height: 200px;
+} */
+
+a {
+    text-decoration: none;
+}
+
+.cardContainer {
+    padding: 10px;
+}
+
+.card-img {
+    height: fit-content;
+}
+
+.row {
+    padding: 10px;
+}
+
+.description {
+    /* font-size: medium;
+    font-weight: 400; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: 2px solid black; */
+    height: 170px;
+    /* height: 70px; */
+}
+
+.title {
+    overflow: hidden;
+    height: 100px;
+}
+
+.relatedCardBody {
+    height: 200px;
+}

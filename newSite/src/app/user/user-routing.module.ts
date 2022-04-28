@@ -7,29 +7,30 @@ import {
 import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
-  // {
-  //   path:'',
-  //   redirectTo:'usernav',
-  //   pathMatch:'full'
-  // },
+  {
+    path:'',
+    redirectTo:'dashboard',
+    pathMatch:'full'
+  },
   {
     path:'',
     component:UsersComponent,
     children:[
-      // {
-      //   path:'dashboard',
-      //   loadChildren:()=>import('./dashboard/dashboard.module').then(m=>
-      //     m.DashboardModule)
-      // },
       {
-        path:'usernav',
-        loadChildren:()=>import('./navbar/navbar.module').then(m=>
-          m.NavbarModule)
+        path:'dashboard',
+        loadChildren:()=>import('./dashboard/dashboard.module').then(m=>
+          m.DashboardModule)
       },
+      // {
+      //   path:'usernav',
+      //   loadChildren:()=>import('./navbar/navbar.module').then(m=>
+      //     m.NavbarModule)
+      // },
+     
       {
-        path:'politics',
-        loadChildren:()=>import('./politics/politics.module').then(m=>
-          m.PoliticsModule)
+        path:'categories',
+        loadChildren:()=>import('./categories/categories.module').then(m=>
+          m.CategoriesModule)
       }
     ]
   }

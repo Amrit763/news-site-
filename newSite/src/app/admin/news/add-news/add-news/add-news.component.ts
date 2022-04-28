@@ -10,6 +10,7 @@ import {
 import { Router } from '@angular/router';
 
 import { MsgServiceService } from 'src/app/shared/service/msg-service.service';
+import { environment } from 'src/environments/environment';
 
 import { NewsService } from '../../service/news.service';
 
@@ -19,14 +20,17 @@ import { NewsService } from '../../service/news.service';
   styleUrls: ['./add-news.component.css']
 })
 export class AddNewsComponent implements OnInit {
-  imageSrc:any;
   news:any;
+  url:string;
+
+  fileToUpload=[];
+
   newsForm = new FormGroup({
     
     title: new FormControl('',[Validators.required]),
     description: new FormControl('',[Validators.required]),
     categories: new FormControl(''),
-    image: new FormControl('')
+    // image: new FormControl('')
     
   })
   
@@ -34,14 +38,17 @@ export class AddNewsComponent implements OnInit {
       public router:Router,
       public newsService:NewsService,
       private msgService:MsgServiceService
-    ) { }
+    ) { 
+      this.url = environment.Base_URL +'news'
+    }
   
     ngOnInit(): void {
     }
     submit(){
       this.news = this.newsForm.value;
       console.log('here >>>',this.news)
-      this.newsService.addNews(this.newsForm.value)
+      this.newsService.upload(this.news,this.fileToUpload,'POST',this.url)
+      // this.newsService.addNews(this.newsForm.value)
       .subscribe(
         (data)=>{
           // this.router.navigate(['/admin'])    
@@ -57,4 +64,11 @@ export class AddNewsComponent implements OnInit {
     get newsFormControl(){
       return this.newsForm.controls;
     }
+
+    fileUpload(event:any){
+      this.fileToUpload = event.target.files
+        console.log('eventttt',event.target.files)
+      console.log("file to upload",this.fileToUpload)
+      }
+
 }

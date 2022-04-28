@@ -1,0 +1,194 @@
+<nav class="navbar navPolitics p-4" style="background-color: #f7f4f0;">
+    <b>
+        <h2 class="navbar-brand" style="font-weight: 600; font-size: 25px; ">
+            BUSINESS
+        </h2>
+
+    </b>
+    <!-- <a class="navbar-brand active text-dark" style="font-size: 25px; font-weight: 500;" >POLITICS</a> -->
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+
+            <div class="container cardContainer" *ngFor="let business of business | 
+            paginate: {
+                itemsPerPage: tableSize, 
+                currentPage: page,
+                totalItems: count
+            } let i = index">
+                <!-- <h2>Bootstrap Horizontal Card</h2> -->
+                <!-- <hr /> -->
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5">
+                            <img class="card-img" src="../../../../assets/images/DSC_0529.JPG" style="height: 300px;" alt="Suresh Dasari Card">
+                        </div>
+                        <div class="col-sm-7">
+                            <a [routerLink]="['/user/politics/sub']">
+                                <!-- <a href="" (click)="viewNews()"> -->
+                                <h2 class="card-title title">
+                                    <b>
+                                        {{business.title}}
+                                    </b></h2>
+                            </a>
+                            <p class="card-text description">{{business.description}}</p>
+
+                            <div class="card-body">
+
+                                <h2 class="card-title" style="height: 30%;">
+                                    <b>
+                                            
+                                    </b>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pagination -->
+            <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)"></pagination-controls>
+        </div>
+
+        <div class="col-sm-4 relatedTable">
+            <!-- related table -->
+            <table class="table table-sm " style="margin-top:3%;">
+                <thead>
+                    <tr>
+                        <th scope="col" style="text-align: center; color: black; background-color: #FFD58A;">
+                            <h3>
+                                Related News
+                            </h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body description">
+                                    <a href="">
+                                        <b><h5>
+                                            {{politics[0].title}}
+                                        </h5>
+                                        </b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tbody>
+                <tbody>
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body description">
+                                    <a href="">
+                                        <b><h5>
+                                            {{international[0].title}}
+                                            <!-- {{travel[0].description}} -->
+                                        </h5>
+                                        </b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tbody>
+                <tbody>
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body description">
+                                    <a href="">
+                                        <b><h5>
+                                            {{travel[0].title}}
+                                            <!-- {{travel[0].description}} -->
+                                        </h5>
+                                        </b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tbody>
+                <tbody>
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body description">
+                                    <a href="">
+                                        <b><h5>
+                                            {{entertainment[0].title}}
+                                            <!-- {{travel[0].description}} -->
+                                        </h5>
+                                        </b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tbody>
+                <tbody>
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body description">
+                                    <a href="">
+                                        <b><h5>
+                                            {{business[0].title}}
+                                            <!-- {{travel[0].description}} -->
+                                        </h5>
+                                        </b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tbody>
+                <tbody>
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body description">
+                                    <a href="">
+                                        <b><h5>
+                                            {{lifeStyle[0].title}}
+                                            <!-- {{travel[0].description}} -->
+                                        </h5>
+                                        </b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tbody>
+            </table>
+
+            <div class="card" style="height: 10%; background-color: green;">
+                add space
+            </div>
+        </div>
+
+    </div>
+
+</div>
