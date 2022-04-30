@@ -8,14 +8,9 @@ const path = require('path')
 const config = require('./config/index');
 require('./config/dbConnection');
 
-const authenticate = require('./middleware/authenticate');
 const authRoutes = require('./controllers/auth.routes');
 const userRoutes = require('./controllers/user.routes');
-const roomRoutes = require('./controllers/room.routes');
-const cartRoutes = require('./controllers/cart.routes');
-const bookingRoutes = require('./controllers/booking.routes');
-const commentRoutes = require('./controllers/comment.routes');
-
+const newRoutes = require('./controllers/news.routes');
 express.use(bodyParser.urlencoded({ extended: false }));
 express.use(bodyParser.json());
 express.use(morgan('dev'));
@@ -26,10 +21,8 @@ express.use('/files/images', app.static(path.join(__dirname, 'files/images')));
 
 express.use('/auth', authRoutes);
 express.use('/user', userRoutes);
-express.use('/news', roomRoutes);
-express.use('/cart', cartRoutes);
-express.use('/book', bookingRoutes);
-express.use('/comment', commentRoutes);
+express.use('/news', newRoutes);
+
 
 express.use((req, res, next) => {
     next({
@@ -44,14 +37,6 @@ express.use((err, req, res, next) => {
     })
 })
 
-
-// express.listen(config.port, (err, done) => {
-//     if (err) {
-//         console.log('Connection Failed');
-//     } else {
-//         console.log('Connection listening at ', config.port);
-//     }
-// })
 express.listen(config.port, (err, done) => {
     if (err) {
         console.log('Server Connection Failed');

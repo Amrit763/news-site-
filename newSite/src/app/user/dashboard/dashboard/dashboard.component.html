@@ -1,17 +1,19 @@
+<div class="col-lg-2 text-white" style="background-color: blue; border-radius: 0 15px 0 12px ;padding-left: 15px; margin-left: 5px;">
+    {{dateTime | date:'EEEE, d MMMM y'}}
+</div>
 <div class="container-fluid">
 
     <div class="row">
         <div class="col  m-2">
             <div class="card bg-dark text-white">
                 <img src="{{imageUrl}}{{politics[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
-                <!-- <img src="..." class="card-img" alt="..."> -->
-                <div class="card-img-overlay " style="padding-top: 400px;">
+                <div class="card-img-overlay ">
                     <a routerLink='/user/categories/profile/{{politics[0]._id}}' style="color:white; font-weight:900; ">
 
                         <h5 class="card-title description" style="font-size: 30px;">{{politics[0].title}}</h5>
                         <p style="text-align: center;">
                             <h4>
-                                <i class="bi bi-clock"></i> {{politics[0].updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
+                                <i class="bi bi-clock"></i> {{politics[0].updatedAt | date:'EEEE, d MMMM y'}}
                             </h4>
                     </a>
                 </div>
@@ -73,10 +75,10 @@
             <div class="row bg-info myrow">
                 ads1
             </div>
-            <div class="row bg-warning myrow">
+            <div class="row bg-warning myrow myADs">
                 ads2
             </div>
-            <div class="row bg-primary myrow">
+            <div class="row bg-primary myrow myADs">
                 ads3
             </div>
 
@@ -84,11 +86,6 @@
     </div>
 
 </div>
-<!-- <div class="col bg-primary" style="border:2px solid dark; height: 100px;">
-    ADs3
-</div> -->
-
-
 
 
 <!-- politics start -->
@@ -214,10 +211,10 @@
             <div class="row bg-info myrow1 ">
                 ads1
             </div>
-            <div class="row bg-warning myrow1">
+            <div class="row bg-warning myrow1 myADs">
                 ads2
             </div>
-            <div class="row bg-primary myrow1">
+            <div class="row bg-primary myrow1 myADs">
                 ads3
             </div>
 
@@ -240,13 +237,13 @@
             <div class="col  m-2">
                 <div class="card bg-dark text-white">
                     <img src="{{imageUrl}}{{entertainment[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
-                    <div class="card-img-overlay " style="padding-top: 400px;">
+                    <div class="card-img-overlay ">
                         <a routerLink='/user/categories/profile/{{entertainment[0]._id}}' style="color:white; font-weight:900; ">
 
                             <h5 class="card-title description" style="font-size: 30px;">{{entertainment[0].title}}</h5>
                             <p style="text-align: center;">
                                 <h4>
-                                    <i class="bi bi-clock"></i> {{entertainment[0].updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
+                                    <i class="bi bi-clock"></i> {{entertainment[0].updatedAt | date:'EEEE, d MMMM y'}}
                                 </h4>
                         </a>
                     </div>
@@ -308,10 +305,10 @@
                 <div class="row bg-info myrow">
                     ads1
                 </div>
-                <div class="row bg-warning myrow">
+                <div class="row bg-warning myrow myADs">
                     ads2
                 </div>
-                <div class="row bg-primary myrow">
+                <div class="row bg-primary myrow myADs">
                     ads3
                 </div>
 
@@ -441,10 +438,10 @@
                 <div class="row bg-info myrow1 ">
                     ads1
                 </div>
-                <div class="row bg-warning myrow1 ">
+                <div class="row bg-warning myrow1 myADs">
                     ads2
                 </div>
-                <div class="row bg-primary myrow1 ">
+                <div class="row bg-primary myrow1 myADs">
                     ads3
                 </div>
 
@@ -465,13 +462,13 @@
                 <div class="col  m-2">
                     <div class="card bg-dark text-white">
                         <img src="{{imageUrl}}{{lifeStyle[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
-                        <div class="card-img-overlay " style="padding-top: 400px;">
+                        <div class="card-img-overlay ">
                             <a routerLink='/user/categories/profile/{{lifeStyle[0]._id}}' style="color:white; font-weight:900; ">
 
                                 <h5 class="card-title description" style="font-size: 30px;">{{lifeStyle[0].title}}</h5>
                                 <p style="text-align: center;">
                                     <h4>
-                                        <i class="bi bi-clock"></i> {{lifeStyle[0].updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
+                                        <i class="bi bi-clock"></i> {{lifeStyle[0].updatedAt | date:'EEEE, d MMMM y'}}
                                     </h4>
                             </a>
                         </div>
@@ -533,10 +530,10 @@
                     <div class="row bg-info myrow ">
                         ads1
                     </div>
-                    <div class="row bg-warning myrow ">
+                    <div class="row bg-warning myrow myADs">
                         ads2
                     </div>
-                    <div class="row bg-primary myrow ">
+                    <div class="row bg-primary myrow myADs">
                         ads3
                     </div>
 
@@ -667,10 +664,10 @@
                     <div class="row bg-info myrow1 ">
                         ads1
                     </div>
-                    <div class="row bg-warning myrow1 ">
+                    <div class="row bg-warning myrow1 myADs">
                         ads2
                     </div>
-                    <div class="row bg-primary myrow1 ">
+                    <div class="row bg-primary myrow1 myADs">
                         ads3
                     </div>
 
@@ -691,13 +688,13 @@
                     <div class="col  m-2">
                         <div class="card bg-dark text-white">
                             <img src="{{imageUrl}}{{international[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
-                            <div class="card-img-overlay " style="padding-top: 400px;">
+                            <div class="card-img-overlay ">
                                 <a routerLink='/user/categories/profile/{{international[0]._id}}' style="color:white; font-weight:900; ">
 
                                     <h5 class="card-title description" style="font-size: 30px;">{{international[0].title}}</h5>
                                     <p style="text-align: center;">
                                         <h4>
-                                            <i class="bi bi-clock"></i> {{international[0].updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
+                                            <i class="bi bi-clock"></i> {{international[0].updatedAt | date:'EEEE, d MMMM y'}}
                                         </h4>
                                 </a>
                             </div>
@@ -708,7 +705,7 @@
 
                         <div class="d-flex align-items-center row-small-image ">
                             <div class="flex-shrink-0 ">
-                                <img class="img-small " src="{{imageUrl}}{{international[0].image[0]}} " alt="... ">
+                                <img class="img-small " src="{{imageUrl}}{{international[1].image[0]}} " alt="... ">
                             </div>
                             <div class="flex-grow-1 ms-3 description ">
                                 <a routerLink='/user/categories/profile/{{international[1]._id}}'>
@@ -718,7 +715,7 @@
                         </div>
                         <div class="d-flex align-items-center row-small-image ">
                             <div class="flex-shrink-0 ">
-                                <img class="img-small " src="{{imageUrl}}{{international[0].image[0]}} " alt="... ">
+                                <img class="img-small " src="{{imageUrl}}{{international[2].image[0]}} " alt="... ">
                             </div>
                             <div class="flex-grow-1 ms-3 description ">
                                 <a routerLink='/user/categories/profile/{{international[2]._id}}'>
@@ -728,7 +725,7 @@
                         </div>
                         <div class="d-flex align-items-center row-small-image ">
                             <div class="flex-shrink-0 ">
-                                <img class="img-small " src="{{imageUrl}}{{international[0].image[0]}} " alt="... ">
+                                <img class="img-small " src="{{imageUrl}}{{international[3].image[0]}} " alt="... ">
                             </div>
                             <div class="flex-grow-1 ms-3 description ">
                                 <a routerLink='/user/categories/profile/{{international[3]._id}}'>
@@ -738,7 +735,7 @@
                         </div>
                         <div class="d-flex align-items-center row-small-image ">
                             <div class="flex-shrink-0 ">
-                                <img class="img-small " src="{{imageUrl}}{{international[0].image[0]}} " alt="... ">
+                                <img class="img-small " src="{{imageUrl}}{{international[4].image[0]}} " alt="... ">
                             </div>
                             <div class="flex-grow-1 ms-3 description ">
                                 <a routerLink='/user/categories/profile/{{international[4]._id}}'>
@@ -759,10 +756,10 @@
                         <div class="row bg-info myrow ">
                             ads1
                         </div>
-                        <div class="row bg-warning myrow ">
+                        <div class="row bg-warning myrow myADs">
                             ads2
                         </div>
-                        <div class="row bg-primary myrow ">
+                        <div class="row bg-primary myrow myADs">
                             ads3
                         </div>
 

@@ -9,3 +9,14 @@
 a {
     text-decoration: none;
 }
+
+.myrow {
+    height: 235px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:414px) {
+    .myADs {
+        display: none;
+    }
+}

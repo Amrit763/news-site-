@@ -1,16 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-/*     var commentSchema = new Schema({
-        comment:String,
-        user:{
-            type:Schema.Types.ObjectId,
-            ref:'user'
-        }
-    }) */
-
 var newsSchema = new Schema({
-    // price: Number,
     image: [String],
     user: {
         type: Schema.Types.ObjectId,
@@ -20,35 +11,10 @@ var newsSchema = new Schema({
         type: String,
         enum: ['business', 'politics', 'lifeStyle', 'travel', 'entertainment', 'international']
     },
-    // numberOfRoom: Number,
-    // carParking: {
-    //     type: Boolean,
-    //     default: false
-    // },
-    // bikeParking: {
-    //     type: Boolean,
-    //     default: false
-    // },
     tags: String,
-    newsDate: Date,
-
     title: String,
     description: String,
-    // map: {
-    //     isMap: {
-    //         type: Boolean,
-    //         default: false
-    //     },
-    //     lat: Number,
-    //     lng: Number
-    // },
-    // comment: [{
-    //     comment: String,
-    //     user: {
-    //         type: Schema.Types.ObjectId,
-    //         ref: 'user'
-    //     }
-    // }]
+
 }, {
     timestamps: true
 })

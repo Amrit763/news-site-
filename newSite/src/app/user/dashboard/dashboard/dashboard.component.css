@@ -66,8 +66,11 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 576px) {
-    /* .ads {
-        visibility: hidden;
-    } */
+@media (max-width:414px) {
+    .myADs {
+        display: none;
+    }
+    .img-big {
+        height: 250px;
+    }
 }

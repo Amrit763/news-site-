@@ -3,7 +3,6 @@ const userModel = require('./../models/user.model');
 var userHelp = require('./../helper/user.help');
 const multer = require('multer');
 const fs = require('fs');
-const authentication = require('./../middleware/authenticate')
 
 var storage = multer.diskStorage({
     destination: (req, file, cb) => {

@@ -1,44 +1,31 @@
-<!-- <div class="container-fluid">
-    <div class="row align-items-start">
-        <div class="col-lg-2 m-1">
-            {{dateTime | date:'EEEE, d MMMM y'}}
-            <img src="../../../../assets/logo/final.png" alt="" style="height: 100px; width:100px">
-        </div>
-        <div class="col-lg-9 bg-primary m-2" style="border: 2px solid black">
-            <div style="height: 100px; width: 300px;">
-                ADD BOX
-            </div>
-
-        </div>
-
-    </div>
-</div> -->
-
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-2">
-            <div class="col" style="padding-top:2px;">
-                <img src="../../../../assets/logo/final.png" alt="" style="height: 100px; width:100px">
+    <div class="row align-items-start">
+        <div class="col-lg-2 m-1 myADs">
+            <img src="../../../../assets/logo/final.png" alt="" style="height: 100px; width:100px">
 
-            </div>
-            <div class="col">
-                <i class="bi bi-clock"></i> {{dateTime | date:'EEEE, d MMMM y'}}
-            </div>
+
         </div>
-        <div class="col-sm-10 bg-primary" style="border: 2px solid black; margin: auto;padding-bottom: 2px ;">
+        <div class="col-lg-9 bg-primary m-2 myADs" style="border: 2px solid black">
             <div style="height: 100px; width: 300px;">
                 ADD BOX
             </div>
+
         </div>
+
     </div>
 </div>
 
-<nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: #FF8C00;">
+
+<nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: #FF8C00; margin: 5px; border-radius: 10px 10px 0 0;">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuIcon" aria-controls="menuIcon" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
+        <div class="navlogo">
+            <img src="../../../../assets/logo/final.png" alt="" style="height: 70px; width:70px ;">
+
+        </div>
         <div class="collapse navbar-collapse  " id="menuIcon">
             <div class="navbar-nav">
                 <a class="nav-link active" routerLink="/user/dashboard">Home</a>
@@ -48,11 +35,15 @@
                 <a class="nav-link active" routerLink="/user/categories/entertainment">Entertainment</a>
                 <a class="nav-link active" routerLink="/user/categories/international">International</a>
 
+
+
+
             </div>
         </div>
+
         <div class="navbar-nav">
-            <a class="nav-link active" [routerLink]="['/auth/register']">Join Us</a>
-            <!-- <a class="nav-link active" href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a> -->
+            <button class="nav-link  btn btn-dark" style="padding: 5px;" [routerLink]="['/auth/register']">Join
+                Us</button>
         </div>
 
     </div>

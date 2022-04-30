@@ -1,0 +1,11 @@
+@media (max-width:414px) {
+    .myADs {
+        display: none;
+    }
+}
+
+@media (min-width:415px) {
+    .navlogo {
+        display: none;
+    }
+}
