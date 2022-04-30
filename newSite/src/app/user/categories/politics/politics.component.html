@@ -25,8 +25,7 @@
                             <img class="card-img" src="{{imageUrl}}{{politic.image[0]}}" style="height: 300px;" alt="Suresh Dasari Card">
                         </div>
                         <div class="col-sm-7">
-                            <a routerLink='/user/categories/politics-sub/{{politic._id}}'>
-                                <!-- <a href="" (click)="viewNews()"> -->
+                            <a routerLink='/user/categories/profile/{{politic._id}}'>
                                 <h2 class="card-title title">
                                     <b>
                                         here
@@ -64,34 +63,6 @@
                         </th>
                     </tr>
                 </thead>
-                <!-- testing -->
-                <!-- <tbody>
-                    <div class="card" *ngFor="let politic of politics ">
-                        <div class="row no-gutters">
-
-                            <div class="card">
-                                <div class="row no-gutters">
-                                    <div class="col-sm-5">
-                                        <img class="card-img" src="{{imageUrl}}{{politic.image[0]}}" style="height: 300px;" alt="Suresh Dasari Card">
-                                    </div>
-                                    <div class="col-sm-7">
-                                        <div class="card-body description">
-                                            <a href="">
-                                                <b><h5>
-                                                    {{politic.title}}
-                                                </h5>
-                                                </b>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </tbody> -->
-
                 <tbody>
                     <div class="card">
                         <div class="row no-gutters">
@@ -100,7 +71,7 @@
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{politics[0]._id}}'>
                                         <b><h5>
                                             {{politics[0].title}}
                                         </h5>
@@ -115,11 +86,11 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{international[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{international[0]._id}}'>
                                         <b><h5>
                                             {{international[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -135,11 +106,12 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{travel[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
+                                <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{travel[0]._id}}'>
                                         <b><h5>
                                             {{travel[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -155,11 +127,12 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{entertainment[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
+                                <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{entertainment[0]._id}}'>
                                         <b><h5>
                                             {{entertainment[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -175,11 +148,12 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{business[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
+                                <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{business[0]._id}}'>
                                         <b><h5>
                                             {{business[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -195,11 +169,12 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{lifeStyle[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
+                                <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{lifeStyle[0]._id}}'>
                                         <b><h5>
                                             {{lifeStyle[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -213,44 +188,11 @@
                 </tbody>
             </table>
 
-            <div class="card" style="height: 10%; background-color: green;">
+            <div class="card" style="height: 16%; background-color: green;">
                 add space
             </div>
         </div>
 
-    </div>
-
-</div>
-
-
-
-<div class="container" *ngIf="viewing">
-    <div class="card">
-        <div class="row">
-            <div class="card-header" style="background-color: orange;">
-                <h1 style="text-align: center; color: white;">
-                    <!-- The quick brown fox jumps over the lazy dog -->
-                    {{politics[0].title}}
-                </h1>
-            </div>
-            <img src="../../../../assets/images/DSC_0529.JPG" class="card-img-top img-fluid" alt="...">
-            <div class="col-sm-8">
-
-                <div class="card-body">
-                    <h5>
-                        {{politics[0].description}}
-                        <!-- <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                   -->
-                        <!-- The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps
-                    over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the
-                    lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs The quick brown fox jumps over the lazy dogs -->
-                    </h5>
-                    <a href="#" class="">Go somewhere</a>
-                </div>
-            </div>
-            <div class="col-sm-4" style="background-color: green;">adds</div>
-        </div>
     </div>
 
 </div>

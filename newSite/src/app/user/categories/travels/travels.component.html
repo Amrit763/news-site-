@@ -22,10 +22,10 @@
                 <div class="card">
                     <div class="row no-gutters">
                         <div class="col-sm-5">
-                            <img class="card-img" src="../../../../assets/images/DSC_0529.JPG" style="height: 300px;" alt="Suresh Dasari Card">
+                            <img class="card-img" src="{{imageUrl}}{{travel.image[0]}}" style="height: 300px;" alt="Suresh Dasari Card">
                         </div>
                         <div class="col-sm-7">
-                            <a routerLink='/user/categories/politics-sub/{{travel._id}}'>
+                            <a routerLink='/user/categories/profile/{{travel._id}}'>
 
                                 <!-- <a [routerLink]="['/user/politics/politics-sub/{{travel._id}}']"> -->
                                 <!-- <a href="" (click)="viewNews()"> -->
@@ -69,11 +69,11 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{politics[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{politics[0]._id}}'>
                                         <b><h5>
                                             {{politics[0].title}}
                                         </h5>
@@ -88,11 +88,11 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{international[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{international[0]._id}}'>
                                         <b><h5>
                                             {{international[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -108,11 +108,12 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{travel[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
+                                <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{travel[0]._id}}'>
                                         <b><h5>
                                             {{travel[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -128,11 +129,12 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{entertainment[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
+                                <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{entertainment[0]._id}}'>
                                         <b><h5>
                                             {{entertainment[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -148,11 +150,12 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{business[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
+                                <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{business[0]._id}}'>
                                         <b><h5>
                                             {{business[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -168,11 +171,12 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card">
+                                <img class="card-img img-fluid" src="{{imageUrl}}{{lifeStyle[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
+                                <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body description">
-                                    <a href="">
+                                    <a routerLink='/user/categories/profile/{{lifeStyle[0]._id}}'>
                                         <b><h5>
                                             {{lifeStyle[0].title}}
                                             <!-- {{travel[0].description}} -->
@@ -186,10 +190,11 @@
                 </tbody>
             </table>
 
-            <div class="card" style="height: 10%; background-color: green;">
+            <div class="card" style="height: 16%; background-color: green;">
                 add space
             </div>
         </div>
+
 
     </div>
 

@@ -5,6 +5,7 @@ import {
 import { Router } from '@angular/router';
 
 import { NewsService } from 'src/app/admin/news/service/news.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-travels',
@@ -13,9 +14,10 @@ import { NewsService } from 'src/app/admin/news/service/news.service';
 })
 export class TravelsComponent implements OnInit {
 
+  imageUrl:any;
+
  // pagination
 tableSize: number=4;
-// tableSizes:any=[5,10,15,20];
 page:number=1;
 count: number= 0;
   
@@ -32,6 +34,7 @@ international:any;
     public newsService:NewsService,
     public router:Router
   ) { 
+    this.imageUrl = environment.imageUrl;
     this.politics=[];
     this.business=[];
     this.lifeStyle=[];
@@ -64,13 +67,6 @@ international:any;
         if(element.categories=='international'){
           this.international.push(element)
         }
-        // console.log('politics: ',this.politics)
-        // console.log('business: ',this.business)
-        // console.log('lifeStyle: ',this.lifeStyle)
-        // console.log('entertainment: ',this.entertainment)
-        // console.log('travel: ',this.travel)
-        // console.log('international: ',this.international)
-
       })
     })
   }
@@ -79,10 +75,6 @@ international:any;
     this.newsService.get();
     
   }
-// viewNews(){
-//   this.submitting=false;
-//   this.viewing=true;
-//   this.router.navigate(['/user/politics'])
-// }
+
 
 }

@@ -5,6 +5,7 @@ import {
 import { Router } from '@angular/router';
 
 import { NewsService } from 'src/app/admin/news/service/news.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-entertainment',
@@ -13,6 +14,7 @@ import { NewsService } from 'src/app/admin/news/service/news.service';
 })
 export class EntertainmentComponent implements OnInit {
 
+  imageUrl:any;
 
  // pagination
  tableSize: number=4;
@@ -33,6 +35,7 @@ export class EntertainmentComponent implements OnInit {
      public newsService:NewsService,
      public router:Router
    ) { 
+     this.imageUrl =environment.imageUrl
      this.politics=[];
      this.business=[];
      this.lifeStyle=[];

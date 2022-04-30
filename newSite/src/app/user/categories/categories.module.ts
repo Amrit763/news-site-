@@ -16,6 +16,7 @@ import {
 import { LifeStyleComponent } from './life-style/life-style.component';
 import { PoliticsSubComponent } from './politics-sub/politics-sub.component';
 import { PoliticsComponent } from './politics/politics.component';
+import { ProfileComponent } from './profile/profile.component';
 import { TravelsComponent } from './travels/travels.component';
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TravelsComponent } from './travels/travels.component';
     EntertainmentComponent,
     InternationalComponent,
     LifeStyleComponent,
-    PoliticsSubComponent
+    PoliticsSubComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,

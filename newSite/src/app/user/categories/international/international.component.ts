@@ -5,6 +5,7 @@ import {
 import { Router } from '@angular/router';
 
 import { NewsService } from 'src/app/admin/news/service/news.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-international',
@@ -13,10 +14,10 @@ import { NewsService } from 'src/app/admin/news/service/news.service';
 })
 export class InternationalComponent implements OnInit {
 
+  imageUrl:any;
 
  // pagination
  tableSize: number=4;
- // tableSizes:any=[5,10,15,20];
  page:number=1;
  count: number= 0;
    
@@ -33,6 +34,7 @@ export class InternationalComponent implements OnInit {
      public newsService:NewsService,
      public router:Router
    ) { 
+     this.imageUrl = environment.imageUrl;
      this.politics=[];
      this.business=[];
      this.lifeStyle=[];

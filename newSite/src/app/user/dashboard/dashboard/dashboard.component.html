@@ -3,42 +3,51 @@
     <div class="row">
         <div class="col  m-2">
             <!-- <img class="card-img" src="{{imageUrl}}{{politic.image[0]}}" style="height: 300px;" alt="Suresh Dasari Card"> -->
-
-            <img src="../../../../assets/images/DSC_0529.JPG" class="img-fluid img-big" style="width: 100%;" alt="">
+            <a routerLink='/user/categories/profile/{{politics[0]._id}}'>
+                <img src="{{imageUrl}}{{politics[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
+            </a>
         </div>
         <div class="col-lg-3 col-md-auto  middle-container m-2 ">
 
 
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{travel[0].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
-                    {{politics[0].title}}
+                    <a routerLink='/user/categories/profile/{{travel[0]._id}}'>
+                        {{travel[0].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{entertainment[0].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{entertainment[0]._id}}'>
                     {{entertainment[0].title}}
+                </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{business[0].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{business[0]._id}}'>
                     {{business[0].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{international[0].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
-                    {{travel[0].title}}
+                    <a routerLink='/user/categories/profile/{{international[0]._id}}'>
+                    {{international[0].title}}
+                    </a>
                 </div>
             </div>
 
@@ -46,7 +55,7 @@
 
 
             <div class="d-grid gap-2">
-                <button class="btn btn-dark mt-3" type="button">Show More!</button>
+                <button class="btn btn-dark mt-3" type="button" routerLink="/user/categories/politics">Show More!</button>
             </div>
 
         </div>
@@ -71,7 +80,6 @@
 
 
 
-
 <!-- <div class="container-fluid">
     <h1 class="bg-danger text-white" style="  padding-left: 10px; margin:10px; height: 50px; border-radius: 10px;">
         Latest NEWS
@@ -82,34 +90,34 @@
         <ng-template carouselSlide>
             <div class="image-container1">
 
-                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
             </div>
         </ng-template>
         <ng-template carouselSlide>
             <div class="image-container1">
 
-                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
-            </div>
-
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="image-container1">
-
-                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
             </div>
 
         </ng-template>
         <ng-template carouselSlide>
             <div class="image-container1">
 
-                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
             </div>
 
         </ng-template>
         <ng-template carouselSlide>
             <div class="image-container1">
 
-                <img class="image-hight" src="../../../../assets/images/DSC_0529.JPG" alt="">
+                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
+            </div>
+
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="image-container1">
+
+                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
             </div>
 
         </ng-template>
@@ -127,42 +135,54 @@
 
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <a routerLink='/user/categories/profile/{{politics[0]._id}}'>
+                        <img class="img-small" src="{{imageUrl}}{{politics[0].image[0]}}" alt="...">
+                    </a>
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[0]._id}}'>
                     {{politics[0].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[1].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[1]._id}}'>
                     {{politics[1].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[2].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[2]._id}}'>
                     {{politics[2].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[3].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[3]._id}}'>
                     {{politics[3].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[4].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[4]._id}}'>
                     {{politics[4].title}}
+                    </a>
                 </div>
             </div>
 
@@ -172,42 +192,52 @@
 
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[5].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[5]._id}}'>
                     {{politics[5].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[6].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[6]._id}}'>
                     {{politics[6].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[7].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[7]._id}}'>
                     {{politics[7].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[8].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[8]._id}}'>
                     {{politics[8].title}}
+                    </a>
                 </div>
             </div>
             <div class="d-flex align-items-center row-small-image">
                 <div class="flex-shrink-0">
-                    <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                    <img class="img-small" src="{{imageUrl}}{{politics[9].image[0]}}" alt="...">
                 </div>
                 <div class="flex-grow-1 ms-3 description">
+                    <a routerLink='/user/categories/profile/{{politics[9]._id}}'>
                     {{politics[9].title}}
+                    </a>
                 </div>
             </div>
 
@@ -240,41 +270,51 @@
 
         <div class="row">
             <div class="col  m-2">
-                <img src="../../../../assets/images/DSC_0529.JPG" class="img-fluid img-big" style="width: 100%;" alt="">
+                <a routerLink='/user/categories/profile/{{entertainment[0]._id}}'>
+                    <img src="{{imageUrl}}{{entertainment[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
+                </a>
             </div>
             <div class="col-lg-3 col-md-auto  middle-container m-2 ">
 
 
                 <div class="d-flex align-items-center row-small-image">
                     <div class="flex-shrink-0">
-                        <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                        <img class="img-small" src="{{imageUrl}}{{entertainment[1].image[0]}}" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3 description">
+                        <a routerLink='/user/categories/profile/{{entertainment[1]._id}}'>                       
                         {{entertainment[1].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image">
                     <div class="flex-shrink-0">
-                        <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                        <img class="img-small" src="{{imageUrl}}{{entertainment[2].image[0]}}" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3 description">
+                        <a routerLink='/user/categories/profile/{{entertainment[2]._id}}'>                       
                         {{entertainment[2].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image">
                     <div class="flex-shrink-0">
-                        <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                        <img class="img-small" src="{{imageUrl}}{{entertainment[3].image[0]}}" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3 description">
+                        <a routerLink='/user/categories/profile/{{entertainment[3]._id}}'>                       
                         {{entertainment[3].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image">
                     <div class="flex-shrink-0">
-                        <img class="img-small" src="../../../../assets/images/DSC_0529.JPG" alt="...">
+                        <img class="img-small" src="{{imageUrl}}{{entertainment[4].image[0]}}" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3 description">
+                        <a routerLink='/user/categories/profile/{{entertainment[4]._id}}'>                       
                         {{entertainment[4].title}}
+                        </a>
                     </div>
                 </div>
 
@@ -282,7 +322,7 @@
 
 
                 <div class="d-grid gap-2">
-                    <button class="btn btn-dark mt-3" type="button">Show More!</button>
+                    <button class="btn btn-dark mt-3" type="button" routerLink="/user/categories/entertainment">Show More!</button>
                 </div>
 
             </div>
@@ -313,42 +353,52 @@
 
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[0].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[0]._id}}'>                       
                         {{business[0].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[1].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[1]._id}}'>                       
                         {{business[1].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[2].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[2]._id}}'>                       
                         {{business[2].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[3].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[3]._id}}'>                       
                         {{business[3].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[4].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[4]._id}}'>                       
                         {{business[4].title}}
+                        </a>
                     </div>
                 </div>
 
@@ -358,42 +408,52 @@
 
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[5].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[5]._id}}'>                       
                         {{business[5].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[6].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[6]._id}}'>                       
                         {{business[6].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[7].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[7]._id}}'>                       
                         {{business[7].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[8].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[8]._id}}'>                       
                         {{business[8].title}}
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex align-items-center row-small-image ">
                     <div class="flex-shrink-0 ">
-                        <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                        <img class="img-small " src="{{imageUrl}}{{business[9].image[0]}} " alt="... ">
                     </div>
                     <div class="flex-grow-1 ms-3 description ">
+                        <a routerLink='/user/categories/profile/{{business[9]._id}}'>                       
                         {{business[9].title}}
+                        </a>
                     </div>
                 </div>
 
@@ -425,41 +485,51 @@
 
             <div class="row ">
                 <div class="col m-2 ">
-                    <img src="../../../../assets/images/DSC_0529.JPG " class="img-fluid img-big " style="width: 100%; " alt=" ">
+                    <a routerLink='/user/categories/profile/{{lifeStyle[0]._id}}'>
+                        <img src="{{imageUrl}}{{lifeStyle[0].image[0]}} " class="img-fluid img-big " style="width: 100%; " alt=" ">
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-auto middle-container m-2 ">
 
 
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{lifeStyle[1].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{lifeStyle[1]._id}}'>                       
                             {{lifeStyle[1].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{lifeStyle[2].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{lifeStyle[2]._id}}'>                       
                             {{lifeStyle[2].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{lifeStyle[3].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{lifeStyle[3]._id}}'>                       
                             {{lifeStyle[3].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{lifeStyle[4].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{lifeStyle[4]._id}}'>                       
                             {{lifeStyle[4].title}}
+                            </a>
                         </div>
                     </div>
 
@@ -467,7 +537,7 @@
 
 
                     <div class="d-grid gap-2 ">
-                        <button class="btn btn-dark mt-3 " type="button ">Show More!</button>
+                        <button class="btn btn-dark mt-3 " type="button" routerLink='/user/categories/life-style'>Show More!</button>
                     </div>
 
                 </div>
@@ -499,42 +569,52 @@
 
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[0].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[0]._id}}'>                       
                             {{travel[0].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[1].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[1]._id}}'>                       
                             {{travel[1].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[2].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[2]._id}}'>                       
                             {{travel[2].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[3].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[3]._id}}'>                       
                             {{travel[3].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[4].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[4]._id}}'>                       
                             {{travel[4].title}}
+                            </a>
                         </div>
                     </div>
 
@@ -544,42 +624,52 @@
 
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[5].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[5]._id}}'>                       
                             {{travel[5].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[6].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[6]._id}}'>                       
                             {{travel[6].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[7].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[7]._id}}'>                       
                             {{travel[7].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[8].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[8]._id}}'>                       
                             {{travel[8].title}}
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center row-small-image ">
                         <div class="flex-shrink-0 ">
-                            <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                            <img class="img-small " src="{{imageUrl}}{{travel[9].image[0]}} " alt="... ">
                         </div>
                         <div class="flex-grow-1 ms-3 description ">
+                            <a routerLink='/user/categories/profile/{{travel[9]._id}}'>                       
                             {{travel[9].title}}
+                            </a>
                         </div>
                     </div>
 
@@ -611,41 +701,51 @@
 
                 <div class="row ">
                     <div class="col m-2 ">
-                        <img src="../../../../assets/images/DSC_0529.JPG " class="img-fluid img-big " style="width: 100%; " alt=" ">
+                        <a routerLink='/user/categories/profile/{{international[0]._id}}'>
+                            <img src="{{imageUrl}}{{international[0].image[0]}} " class="img-fluid img-big " style="width: 100%; " alt=" ">
+                        </a>
                     </div>
                     <div class="col-lg-3 col-md-auto middle-container m-2 ">
 
 
                         <div class="d-flex align-items-center row-small-image ">
                             <div class="flex-shrink-0 ">
-                                <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                                <img class="img-small " src="{{imageUrl}}{{international[0].image[0]}} " alt="... ">
                             </div>
                             <div class="flex-grow-1 ms-3 description ">
+                                <a routerLink='/user/categories/profile/{{international[1]._id}}'>
                                 {{international[1].title}}
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center row-small-image ">
                             <div class="flex-shrink-0 ">
-                                <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                                <img class="img-small " src="{{imageUrl}}{{international[0].image[0]}} " alt="... ">
                             </div>
                             <div class="flex-grow-1 ms-3 description ">
+                                <a routerLink='/user/categories/profile/{{international[2]._id}}'>
                                 {{international[2].title}}
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center row-small-image ">
                             <div class="flex-shrink-0 ">
-                                <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                                <img class="img-small " src="{{imageUrl}}{{international[0].image[0]}} " alt="... ">
                             </div>
                             <div class="flex-grow-1 ms-3 description ">
+                                <a routerLink='/user/categories/profile/{{international[3]._id}}'>
                                 {{international[3].title}}
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center row-small-image ">
                             <div class="flex-shrink-0 ">
-                                <img class="img-small " src="../../../../assets/images/DSC_0529.JPG " alt="... ">
+                                <img class="img-small " src="{{imageUrl}}{{international[0].image[0]}} " alt="... ">
                             </div>
                             <div class="flex-grow-1 ms-3 description ">
+                                <a routerLink='/user/categories/profile/{{international[4]._id}}'>
                                 {{international[4].title}}
+                                </a>
                             </div>
                         </div>
 
@@ -653,7 +753,7 @@
 
 
                         <div class="d-grid gap-2 ">
-                            <button class="btn btn-dark mt-3 " type="button ">Show More!</button>
+                            <button class="btn btn-dark mt-3" type="button" routerLink="/user/categories/international">Show More!</button>
                         </div>
 
                     </div>

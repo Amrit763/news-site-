@@ -21,12 +21,6 @@ const routes: Routes = [
         loadChildren:()=>import('./dashboard/dashboard.module').then(m=>
           m.DashboardModule)
       },
-      // {
-      //   path:'usernav',
-      //   loadChildren:()=>import('./navbar/navbar.module').then(m=>
-      //     m.NavbarModule)
-      // },
-     
       {
         path:'categories',
         loadChildren:()=>import('./categories/categories.module').then(m=>

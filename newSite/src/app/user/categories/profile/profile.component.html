@@ -1,0 +1,80 @@
+<nav class="navbar navPolitics p-4" style="background-color: #f7f4f0;">
+    <b>
+        <h2 class="navbar-brand" style="font-weight: 600; font-size: 25px; text-transform: uppercase;">
+            {{news.categories}}
+        </h2>
+
+    </b>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h1 style="padding: 20px;">
+                {{news.title}}
+            </h1>
+            <img src="{{imageUrl}}{{news.image[0]}}" class="img-fluid" alt="" style="height: 450px; width: 100%;  border-radius: 10px;">
+        </div>
+        <div class="col-sm-4">
+            <div class="col-12 " style="height: 95%; background-color: goldenrod; margin: 30px; padding: 10px;">
+                ads1
+            </div>
+        </div>
+    </div>
+
+    <div class="12 mt-4 " style="background-color: rgb(228, 228, 228); border-radius: 10px; padding:20px ;">
+        <h5>
+            {{news.description}}
+        </h5>
+    </div>
+
+</div>
+<!-- 
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-lg-6">
+            <a>
+                <img src="{{imageUrl}}{{news.image[0]}}" class="img-fluid" alt="" style="height: 450px; width: 100%;">
+            </a>
+        </div>
+
+        <div class="col-lg-6 mt-3" style="background-color: rgb(228, 228, 228); border-radius: 10px">
+            <h4>
+                {{news.title}}
+            </h4>
+        </div>
+    </div>
+    <div class="col-12"></div>
+    <div class="12 mt-4 " style="background-color: rgb(228, 228, 228); border-radius: 10px; padding:20px ;">
+        <h5>
+            {{news.description}}
+        </h5>
+    </div>
+    
+</div> -->
+
+
+
+<div class="container-fluid mt-5">
+    <h1 class=" text-black " style=" padding-left: 10px; margin:10px; height: 50px; border-radius: 10px; background-color: #FFD58A; ">
+        <!-- <h1 class="bg-danger text-white" style="  padding-left: 10px; margin:10px; height: 50px; border-radius: 10px;"> -->
+        RELATED NEWS
+    </h1>
+
+    <owl-carousel-o [options]="customOptions">
+
+        <ng-template carouselSlide>
+            <div class="image-container1">
+                <img class="image-hight" src="{{imageUrl}}{{news.image[0]}}" alt="">
+            </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+            <div class="image-container1">
+
+                <img class="image-hight" src="{{imageUrl}}{{news.image[0]}}" alt="">
+            </div>
+
+        </ng-template>
+    </owl-carousel-o>
+</div>

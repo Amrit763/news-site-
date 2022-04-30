@@ -12,8 +12,8 @@ import {
   InternationalComponent,
 } from './international/international.component';
 import { LifeStyleComponent } from './life-style/life-style.component';
-import { PoliticsSubComponent } from './politics-sub/politics-sub.component';
 import { PoliticsComponent } from './politics/politics.component';
+import { ProfileComponent } from './profile/profile.component';
 import { TravelsComponent } from './travels/travels.component';
 
 const routes: Routes = [{
@@ -40,8 +40,8 @@ const routes: Routes = [{
   component:LifeStyleComponent
 },
 {
-  path:'politics-sub/:id',
-  component:PoliticsSubComponent
+  path:'profile/:id',
+  component:ProfileComponent
 }
 ];
 

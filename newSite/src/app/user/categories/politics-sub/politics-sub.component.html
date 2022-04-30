@@ -6,31 +6,6 @@
 
     </b>
 </nav>
-<!-- <div class="container">
-    <div class="card">
-        <div class="row">
-            <div class="card-header" style="background-color: orange;">
-                <h1 style="text-align: center; color: white;">
-                    {{news.title}}
-                </h1>
-            </div>
-            <img src="../../../../assets/images/DSC_0529.JPG" class="card-img-top img-fluid" alt="...">
-            <div class="col-sm-8">
-
-                <div class="card-body">
-                    <h5>
-                        {{news.description}}
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </h5>
-                    <a href="#" class="">Go somewhere</a>
-                </div>
-            </div>
-            <div class="col-sm-4" style="background-color: green;">adds</div>
-        </div>
-    </div>
-
-</div> -->
-
 <div class="container-fluid">
     <div class="row mt-4">
         <div class="col-lg-6">
@@ -64,14 +39,14 @@
 
             <ng-template carouselSlide>
                 <div class="image-container1">
-                    <img class="image-hight" src="{{imageUrl}}{{news[0].image[0]}}" alt="">
+                    <img class="image-hight" src="{{imageUrl}}{{news.image[0]}}" alt="">
                 </div>
             </ng-template>
 
             <ng-template carouselSlide>
                 <div class="image-container1">
 
-                    <img class="image-hight" src="{{imageUrl}}{{news[0].image[0]}}" alt="">
+                    <img class="image-hight" src="{{imageUrl}}{{news.image[0]}}" alt="">
                 </div>
 
             </ng-template>
