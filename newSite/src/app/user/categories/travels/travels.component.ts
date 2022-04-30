@@ -46,7 +46,7 @@ international:any;
   ngOnInit(): void {
     this.newsService.get()
     .subscribe((data:any)=>{
-      // console.log('all news in ngOnit ',data);
+      window.scrollTo(0, 0);
       this.allNews=data
       data.forEach((element:{categories: string;})=>{
         if(element.categories=='politics'){

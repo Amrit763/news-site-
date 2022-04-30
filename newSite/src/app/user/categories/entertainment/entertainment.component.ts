@@ -18,7 +18,6 @@ export class EntertainmentComponent implements OnInit {
 
  // pagination
  tableSize: number=4;
- // tableSizes:any=[5,10,15,20];
  page:number=1;
  count: number= 0;
    
@@ -47,7 +46,7 @@ export class EntertainmentComponent implements OnInit {
    ngOnInit(): void {
      this.newsService.get()
      .subscribe((data:any)=>{
-       // console.log('all news in ngOnit ',data);
+      window.scrollTo(0, 0);
        this.allNews=data
        data.forEach((element:{categories: string;})=>{
          if(element.categories=='politics'){
@@ -68,26 +67,12 @@ export class EntertainmentComponent implements OnInit {
          if(element.categories=='international'){
            this.international.push(element)
          }
-         // console.log('politics: ',this.politics)
-         // console.log('business: ',this.business)
-         // console.log('lifeStyle: ',this.lifeStyle)
-         // console.log('entertainment: ',this.entertainment)
-         // console.log('travel: ',this.travel)
-         // console.log('international: ',this.international)
- 
        })
      })
    }
    onTableDataChange(event:any){
      this.page = event;
      this.newsService.get();
-     
    }
- // viewNews(){
- //   this.submitting=false;
- //   this.viewing=true;
- //   this.router.navigate(['/user/politics'])
- // }
- 
  }
  

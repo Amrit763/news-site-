@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import {
   Component,
   OnInit,
@@ -14,6 +15,8 @@ import { environment } from 'src/environments/environment';
 })
 export class DashboardComponent implements OnInit {
 
+  dateTime:any;
+
   imageUrl:any;
   fileToUpload=[];
 
@@ -28,7 +31,8 @@ international:any;
 
   constructor(
     public router:Router,
-    public newsService:NewsService
+    public newsService:NewsService,
+    public datepipe: DatePipe
   ) {
     this.imageUrl = environment.imageUrl;
 
@@ -41,6 +45,7 @@ international:any;
    }
 
   ngOnInit(): void {
+    this.dateTime = new Date()
     this.newsService.get()
     .subscribe((data)=>{
       console.log('all news is>> ',data);
@@ -76,6 +81,11 @@ international:any;
      
 
     })
+
+    // myFunction(){
+    //   this.date=new Date();
+    //   let latest_date =this.datepipe.transform(this.date, 'yyyy-MM-dd');
+    //  }
   }
   // customOptions: OwlOptions = {
   //   loop: true,

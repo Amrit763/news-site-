@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: #FF8C00;">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuIcon" aria-controls="menuIcon" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse  " id="menuIcon">
+            <div class="navbar-nav">
+                <a class="nav-link active" routerLink="/user/dashboard">Home</a>
+                <a class="nav-link active" routerLink="/user/categories">Politics</a>
+                <a class="nav-link active" routerLink="/user/categories/travels">Travels</a>
+                <a class="nav-link active" routerLink="/user/categories/business">Business</a>
+                <a class="nav-link active" routerLink="/user/categories/entertainment">Entertainment</a>
+                <a class="nav-link active" routerLink="/user/categories/international">International</a>
+
+            </div>
+        </div>
+        <div class="navbar-nav">
+
+            <a class="navbar-brand" [routerLink]="['/user/dashboard']" class=" text-white text-decoration-none p-2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-box-arrow-left fa-lg p-2"></i>
+            </a>
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="container">
+    <img src="../../../assets/images/pageNotFound.jpeg" style="width: 95%; height: 80%;">
+</div>

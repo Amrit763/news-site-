@@ -30,7 +30,8 @@ var newsSchema = new Schema({
     //     default: false
     // },
     tags: String,
-    date: Date,
+    newsDate: Date,
+
     title: String,
     description: String,
     // map: {

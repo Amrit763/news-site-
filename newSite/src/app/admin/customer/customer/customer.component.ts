@@ -21,8 +21,7 @@ id:any;
 tableSize: number=10;
 page:number=1;
 count: number= 0;
-// tableSizes:any=[5,10,15,20];
-// showpost:any=[]
+
 
   constructor(
     public adminService:AdminServiceService,
@@ -54,7 +53,6 @@ count: number= 0;
     this.tableSize = event.target.value;
     this.page = 1;
     this.getAllUser();
-
   }
   deleteUser(obj:any){
     // console.log('here id is >>>',obj._id)

@@ -2,12 +2,6 @@ h2 {
     padding-left: 4%;
 }
 
-
-/* img {
-    width: 200px;
-    height: 200px;
-} */
-
 a {
     text-decoration: none;
 }
@@ -25,13 +19,15 @@ a {
 }
 
 .description {
-    /* font-size: medium;
-    font-weight: 400; */
     overflow: hidden;
     text-overflow: ellipsis;
-    /* border: 2px solid black; */
-    height: 170px;
-    /* height: 70px; */
+    height: 160px;
+}
+
+.recentDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 110px;
 }
 
 .title {

@@ -1,6 +1,7 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="row align-items-start">
         <div class="col-lg-2 m-1">
+            {{dateTime | date:'EEEE, d MMMM y'}}
             <img src="../../../../assets/logo/final.png" alt="" style="height: 100px; width:100px">
         </div>
         <div class="col-lg-9 bg-primary m-2" style="border: 2px solid black">
@@ -11,54 +12,32 @@
         </div>
 
     </div>
-</div>
-<!-- <nav class="navbar navbar-expand-lg  text-black bg-warning">
-    <div class="container-fluid">
-        <a class="navbar-brand active text-white" style="font-size: 25px; font-weight: 500;" href="#">NEWS</a>
-        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item" style="font-size: 18px;">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                </li>
+</div> -->
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">
-                        Categories
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" [routerLink]="['/user/politics']">Politics</a></li>
-                        <li><a class="dropdown-item" href="#">Business</a></li>
-                        <li><a class="dropdown-item" href="#">Travels</a></li>
-                        <li><a class="dropdown-item" href="#">International</a></li>
-                        <li><a class="dropdown-item" href="#">Entertainment</a></li>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="col" style="padding-top:2px;">
+                <img src="../../../../assets/logo/final.png" alt="" style="height: 100px; width:100px">
 
-
-                    </ul>
-                </li>
-
-            </ul>
-            <div class="navbar-nav">
-                <a class="nav-link active text-white" [routerLink]="['/auth/register']">Register</a>
             </div>
-
+            <div class="col">
+                <i class="bi bi-clock"></i> {{dateTime | date:'EEEE, d MMMM y'}}
+            </div>
+        </div>
+        <div class="col-sm-10 bg-primary" style="border: 2px solid black; margin: auto;padding-bottom: 2px ;">
+            <div style="height: 100px; width: 300px;">
+                ADD BOX
+            </div>
         </div>
     </div>
-</nav> -->
-
+</div>
 
 <nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: #FF8C00;">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuIcon" aria-controls="menuIcon" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- <div class="input-group" data-bs-target="#carouselExampleControls">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary">search</button>
-        </div> -->
 
         <div class="collapse navbar-collapse  " id="menuIcon">
             <div class="navbar-nav">

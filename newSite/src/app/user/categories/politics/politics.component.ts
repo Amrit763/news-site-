@@ -13,9 +13,8 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./politics.component.css']
 })
 export class PoliticsComponent implements OnInit {
-
-submitting: boolean=true;
-viewing: boolean=false;
+// news date and time
+dateTime: any;
 
 // pagination
 tableSize: number=4;
@@ -47,9 +46,10 @@ international:any;
   }
 
   ngOnInit(): void {
+    this.dateTime = new Date()
     this.newsService.get()
     .subscribe((data:any)=>{
-      // console.log('all news in ngOnit ',data);
+      window.scrollTo(0, 0);
       this.allNews=data
       data.forEach((element:{categories: string;})=>{
         if(element.categories=='politics'){
@@ -79,10 +79,6 @@ international:any;
     this.newsService.get();
     
   }
-viewNews(){
-  this.submitting=false;
-  this.viewing=true;
-  this.router.navigate(['/user/politics'])
-}
+
 
 }

@@ -2,10 +2,20 @@
 
     <div class="row">
         <div class="col  m-2">
-            <!-- <img class="card-img" src="{{imageUrl}}{{politic.image[0]}}" style="height: 300px;" alt="Suresh Dasari Card"> -->
-            <a routerLink='/user/categories/profile/{{politics[0]._id}}'>
+            <div class="card bg-dark text-white">
                 <img src="{{imageUrl}}{{politics[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
-            </a>
+                <!-- <img src="..." class="card-img" alt="..."> -->
+                <div class="card-img-overlay " style="padding-top: 400px;">
+                    <a routerLink='/user/categories/profile/{{politics[0]._id}}' style="color:white; font-weight:900; ">
+
+                        <h5 class="card-title description" style="font-size: 30px;">{{politics[0].title}}</h5>
+                        <p style="text-align: center;">
+                            <h4>
+                                <i class="bi bi-clock"></i> {{politics[0].updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
+                            </h4>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="col-lg-3 col-md-auto  middle-container m-2 ">
 
@@ -80,54 +90,11 @@
 
 
 
-<!-- <div class="container-fluid">
-    <h1 class="bg-danger text-white" style="  padding-left: 10px; margin:10px; height: 50px; border-radius: 10px;">
-        Latest NEWS
-    </h1>
-
-    <owl-carousel-o [options]="customOptions">
-
-        <ng-template carouselSlide>
-            <div class="image-container1">
-
-                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
-            </div>
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="image-container1">
-
-                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
-            </div>
-
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="image-container1">
-
-                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
-            </div>
-
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="image-container1">
-
-                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
-            </div>
-
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="image-container1">
-
-                <img class="image-hight" src="{{imageUrl}}{{travel[0].image[0]}}" alt="">
-            </div>
-
-        </ng-template>
-    </owl-carousel-o>
-</div> -->
 
 <!-- politics start -->
 
 <div class="container-fluid">
-    <h1 class=" text-black" style="  padding-left: 10px; margin:10px; border-radius: 10px; height: 50px; background-color: #FFD58A;">
+    <h1 class=" text-black" style="  padding-left: 10px; padding: auto; margin:10px; border-radius: 10px; height: 50px; background-color: #FFD58A;">
         POLITICS
     </h1>
     <div class="row">
@@ -244,7 +211,7 @@
         </div>
 
         <div class="col col-lg-3  m-2">
-            <div class="row bg-info myrow1">
+            <div class="row bg-info myrow1 ">
                 ads1
             </div>
             <div class="row bg-warning myrow1">
@@ -269,10 +236,21 @@
         </h1>
 
         <div class="row">
+
             <div class="col  m-2">
-                <a routerLink='/user/categories/profile/{{entertainment[0]._id}}'>
+                <div class="card bg-dark text-white">
                     <img src="{{imageUrl}}{{entertainment[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
-                </a>
+                    <div class="card-img-overlay " style="padding-top: 400px;">
+                        <a routerLink='/user/categories/profile/{{entertainment[0]._id}}' style="color:white; font-weight:900; ">
+
+                            <h5 class="card-title description" style="font-size: 30px;">{{entertainment[0].title}}</h5>
+                            <p style="text-align: center;">
+                                <h4>
+                                    <i class="bi bi-clock"></i> {{entertainment[0].updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
+                                </h4>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-3 col-md-auto  middle-container m-2 ">
 
@@ -346,7 +324,7 @@
 
     <div class="container-fluid">
         <h1 class="text-black" style="  padding-left: 10px; margin:10px; border-radius: 10px; height: 50px; background-color: #FFD58A">
-            Business
+            BUSINESS
         </h1>
         <div class=" row ">
             <div class="col-lg-4 col-md-auto middle-container m-2 ">
@@ -480,14 +458,24 @@
 
         <div class="container-fluid ">
             <h1 class=" text-black " style=" padding-left: 10px; margin:10px; height: 50px; border-radius: 10px; background-color: #FFD58A; ">
-                Life Style
+                LIFE STYLE
             </h1>
 
             <div class="row ">
-                <div class="col m-2 ">
-                    <a routerLink='/user/categories/profile/{{lifeStyle[0]._id}}'>
-                        <img src="{{imageUrl}}{{lifeStyle[0].image[0]}} " class="img-fluid img-big " style="width: 100%; " alt=" ">
-                    </a>
+                <div class="col  m-2">
+                    <div class="card bg-dark text-white">
+                        <img src="{{imageUrl}}{{lifeStyle[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
+                        <div class="card-img-overlay " style="padding-top: 400px;">
+                            <a routerLink='/user/categories/profile/{{lifeStyle[0]._id}}' style="color:white; font-weight:900; ">
+
+                                <h5 class="card-title description" style="font-size: 30px;">{{lifeStyle[0].title}}</h5>
+                                <p style="text-align: center;">
+                                    <h4>
+                                        <i class="bi bi-clock"></i> {{lifeStyle[0].updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
+                                    </h4>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-auto middle-container m-2 ">
 
@@ -562,7 +550,7 @@
 
         <div class="container-fluid">
             <h1 class="text-black" style="  padding-left: 10px; margin:10px; border-radius: 10px; height: 50px; background-color: #FFD58A">
-                Travel
+                TRAVEL
             </h1>
             <div class=" row ">
                 <div class="col-lg-4 col-md-auto middle-container m-2 ">
@@ -696,14 +684,24 @@
 
             <div class="container-fluid ">
                 <h1 class=" text-black " style=" padding-left: 10px; margin:10px; height: 50px; border-radius: 10px; background-color: #FFD58A; ">
-                    International
+                    INTERNATIONAL
                 </h1>
 
                 <div class="row ">
-                    <div class="col m-2 ">
-                        <a routerLink='/user/categories/profile/{{international[0]._id}}'>
-                            <img src="{{imageUrl}}{{international[0].image[0]}} " class="img-fluid img-big " style="width: 100%; " alt=" ">
-                        </a>
+                    <div class="col  m-2">
+                        <div class="card bg-dark text-white">
+                            <img src="{{imageUrl}}{{international[0].image[0]}}" class="img-fluid img-big" style="width: 100%;" alt="">
+                            <div class="card-img-overlay " style="padding-top: 400px;">
+                                <a routerLink='/user/categories/profile/{{international[0]._id}}' style="color:white; font-weight:900; ">
+
+                                    <h5 class="card-title description" style="font-size: 30px;">{{international[0].title}}</h5>
+                                    <p style="text-align: center;">
+                                        <h4>
+                                            <i class="bi bi-clock"></i> {{international[0].updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
+                                        </h4>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-auto middle-container m-2 ">
 

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-nav-header',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavHeaderComponent implements OnInit {
 
+dateTime: any;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.dateTime =new Date()
   }
 
 }

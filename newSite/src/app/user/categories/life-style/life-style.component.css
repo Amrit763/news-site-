@@ -1,0 +1,40 @@
+h2 {
+    padding-left: 4%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cardContainer {
+    padding: 10px;
+}
+
+.card-img {
+    height: fit-content;
+}
+
+.row {
+    padding: 10px;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 160px;
+}
+
+.recentDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 110px;
+}
+
+.title {
+    overflow: hidden;
+    height: 100px;
+}
+
+.relatedCardBody {
+    height: 200px;
+}

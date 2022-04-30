@@ -4,6 +4,10 @@ import {
   Routes,
 } from '@angular/router';
 
+import {
+  PageNotFoundComponent,
+} from './shared/page-not-found/page-not-found.component';
+
 const routes: Routes = [
   {
     path:'',
@@ -26,6 +30,9 @@ const routes: Routes = [
     path:'auth',
     loadChildren:()=>import('./auth/auth.module').then(m=>
       m.AuthModule)
+  },{
+    path:'**',
+    component:PageNotFoundComponent
   }
 ];
 

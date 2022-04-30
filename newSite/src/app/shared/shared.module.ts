@@ -11,10 +11,12 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { MsgServiceService } from './service/msg-service.service';
 import { SharedRoutingModule } from './shared-routing.module';
 import { SharedComponent } from './shared/shared.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    SharedComponent
+    SharedComponent,
+    PageNotFoundComponent
   ],
   imports: [
     CommonModule,

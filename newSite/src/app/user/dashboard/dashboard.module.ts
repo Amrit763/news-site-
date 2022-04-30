@@ -1,4 +1,7 @@
-import { CommonModule } from '@angular/common';
+import {
+  CommonModule,
+  DatePipe,
+} from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -16,8 +19,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CommonModule,
     DashboardRoutingModule,
     SharedModule,
-    CarouselModule
+    CarouselModule,
+    // DatePipe
   ],
-  providers:[NewsService]
+  providers:[NewsService,DatePipe]
 })
 export class DashboardModule { }

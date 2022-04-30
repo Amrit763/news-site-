@@ -15,6 +15,14 @@ import { NewsService } from '../../service/news.service';
 })
 export class ShowNewsComponent implements OnInit {
 
+  // dateTime:any;
+
+// pagination
+tableSize: number=10;
+page:number=1;
+count: number= 0;
+
+
 imageUrl:any;
 allNews:any;
 politics:any;
@@ -43,7 +51,9 @@ international:any;
     this.newsService.get()
     .subscribe((data:any)=>{
       console.log('all news in ngOnit ',data);
-      this.allNews=data
+      this.allNews=data,
+      // this.dateTime = this.allNews.createdAt;
+      // console.log('here is >> ',this.allNews.title)
       data.forEach((element:{categories: string;})=>{
         if(element.categories=='politics'){
           this.politics.push(element)
@@ -82,5 +92,9 @@ international:any;
       this.msgService.showSuccess('Deleted Room');
       this.getAllNews()
     })
+  }
+  onTableDataChange(event:any){
+    this.page = event;
+    this.getAllNews();
   }
 }

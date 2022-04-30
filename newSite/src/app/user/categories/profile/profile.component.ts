@@ -46,17 +46,53 @@ international:any;
   }
 
   ngOnInit(): void {
+    this.newsService.get()
+    .subscribe((data:any)=>{
+      console.log('all news in ngOnit ',data);
+      this.allNews=data,
+      // this.dateTime = this.allNews.createdAt;
+      // console.log('here is >> ',this.allNews.title)
+      data.forEach((element:{categories: string;})=>{
+        if(element.categories=='politics'){
+          this.politics.push(element)
+        }
+        if(element.categories=='business'){
+          this.business.push(element)
+        }
+        if(element.categories=='lifeStyle'){
+          this.lifeStyle.push(element)
+        }
+        if(element.categories=='entertainment'){
+          this.entertainment.push(element)
+        }
+        if(element.categories=='travel'){
+          this.travel.push(element)
+        }
+        if(element.categories=='international'){
+          this.international.push(element)
+        }
+      })
+    })
+
+
+
     const newsId=this.activatedRoute.snapshot.params["id"];
     console.log('news id aayo >>',newsId)
     this.newsService.getById(newsId)
     .subscribe((data)=>{
       console.log('data is >>',data);
       this.news=data;
+      window.scrollTo(0, 0);
 
     })
+  }
 
-    
-   
+  getAllNews(){
+    this.newsService.get()
+    .subscribe((data:any)=>{
+      this.allNews =data
+      console.log('here from profile get news >> ',this.allNews)
+    })
   }
 
   customOptions: OwlOptions = {

@@ -4,8 +4,8 @@ module.exports = (req, news) => {
 
     if (req.tags)
         room.tags = req.tags;
-    if (req.date)
-        room.date = req.date;
+    // if (req.newsDate)
+    //     room.newsDate = req.newsDate;
     if (req.title)
         news.title = req.title;
     if (req.categories)

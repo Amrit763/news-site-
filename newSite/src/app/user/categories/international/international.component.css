@@ -34,6 +34,12 @@ a {
     /* height: 70px; */
 }
 
+.recentDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 110px;
+}
+
 .title {
     overflow: hidden;
     height: 100px;

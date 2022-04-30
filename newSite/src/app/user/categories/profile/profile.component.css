@@ -1,0 +1,11 @@
+.description {
+    font-size: medium;
+    font-weight: 400;
+    overflow: hidden;
+    /* border: 2px solid black; */
+    height: 70px;
+}
+
+a {
+    text-decoration: none;
+}

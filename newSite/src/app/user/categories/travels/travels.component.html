@@ -5,7 +5,7 @@
         </h2>
 
     </b>
-    <!-- <a class="navbar-brand active text-dark" style="font-size: 25px; font-weight: 500;" >POLITICS</a> -->
+    <!-- <a class="navbar-brand active text-dark" style="font-size: 25px; font-weight: 500;" >TRAVELS</a> -->
 </nav>
 <div class="container">
     <div class="row">
@@ -26,24 +26,13 @@
                         </div>
                         <div class="col-sm-7">
                             <a routerLink='/user/categories/profile/{{travel._id}}'>
-
-                                <!-- <a [routerLink]="['/user/politics/politics-sub/{{travel._id}}']"> -->
-                                <!-- <a href="" (click)="viewNews()"> -->
                                 <h2 class="card-title title">
                                     <b>
                                         {{travel.title}}
                                     </b></h2>
                             </a>
                             <p class="card-text description">{{travel.description}}</p>
-
-                            <div class="card-body">
-
-                                <h2 class="card-title" style="height: 30%;">
-                                    <b>
-                                            
-                                    </b>
-                                </h2>
-                            </div>
+                            <i class="bi bi-clock"></i> {{travel.updatedAt | date:'EEEE, d MMMM y, h:mm a'}}
                         </div>
                     </div>
                 </div>
@@ -72,13 +61,14 @@
                                 <img class="card-img img-fluid" src="{{imageUrl}}{{politics[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
                             </div>
                             <div class="col-sm-7">
-                                <div class="card-body description">
+                                <div class="card-body ">
                                     <a routerLink='/user/categories/profile/{{politics[0]._id}}'>
-                                        <b><h5>
+                                        <b><h5 class="recentDescription">
                                             {{politics[0].title}}
                                         </h5>
                                         </b>
                                     </a>
+                                    <i class="bi bi-clock"></i> {{politics[0].updatedAt | date:' d MMMM y '}}
                                 </div>
                             </div>
                         </div>
@@ -91,14 +81,14 @@
                                 <img class="card-img img-fluid" src="{{imageUrl}}{{international[0].image[0]}}" style="height: 160px; width: 160px;" alt="Suresh Dasari Card">
                             </div>
                             <div class="col-sm-7">
-                                <div class="card-body description">
+                                <div class="card-body ">
                                     <a routerLink='/user/categories/profile/{{international[0]._id}}'>
-                                        <b><h5>
+                                        <b><h5 class="recentDescription">
                                             {{international[0].title}}
-                                            <!-- {{travel[0].description}} -->
                                         </h5>
                                         </b>
                                     </a>
+                                    <i class="bi bi-clock"></i> {{international[0].updatedAt | date:' d MMMM y '}}
                                 </div>
                             </div>
                         </div>
@@ -112,14 +102,14 @@
                                 <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
-                                <div class="card-body description">
+                                <div class="card-body">
                                     <a routerLink='/user/categories/profile/{{travel[0]._id}}'>
-                                        <b><h5>
+                                        <b><h5 class="recentDescription">
                                             {{travel[0].title}}
-                                            <!-- {{travel[0].description}} -->
                                         </h5>
                                         </b>
                                     </a>
+                                    <i class="bi bi-clock"></i> {{travel[0].updatedAt | date:' d MMMM y '}}
                                 </div>
                             </div>
                         </div>
@@ -133,14 +123,14 @@
                                 <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
-                                <div class="card-body description">
+                                <div class="card-body ">
                                     <a routerLink='/user/categories/profile/{{entertainment[0]._id}}'>
-                                        <b><h5>
+                                        <b><h5 class="recentDescription">
                                             {{entertainment[0].title}}
-                                            <!-- {{travel[0].description}} -->
                                         </h5>
                                         </b>
                                     </a>
+                                    <i class="bi bi-clock"></i> {{entertainment[0].updatedAt | date:' d MMMM y '}}
                                 </div>
                             </div>
                         </div>
@@ -154,14 +144,14 @@
                                 <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
-                                <div class="card-body description">
+                                <div class="card-body ">
                                     <a routerLink='/user/categories/profile/{{business[0]._id}}'>
-                                        <b><h5>
+                                        <b><h5 class="recentDescription">
                                             {{business[0].title}}
-                                            <!-- {{travel[0].description}} -->
                                         </h5>
                                         </b>
                                     </a>
+                                    <i class="bi bi-clock"></i> {{business[0].updatedAt | date:' d MMMM y '}}
                                 </div>
                             </div>
                         </div>
@@ -175,14 +165,14 @@
                                 <!-- <img src="../../../../assets/images/DSC_0529.JPG" class="card-img img-fluid" alt="Suresh Dasari Card"> -->
                             </div>
                             <div class="col-sm-7">
-                                <div class="card-body description">
+                                <div class="card-body ">
                                     <a routerLink='/user/categories/profile/{{lifeStyle[0]._id}}'>
-                                        <b><h5>
+                                        <b><h5 class="recentDescription">
                                             {{lifeStyle[0].title}}
-                                            <!-- {{travel[0].description}} -->
                                         </h5>
                                         </b>
                                     </a>
+                                    <i class="bi bi-clock"></i> {{lifeStyle[0].updatedAt | date:' d MMMM y '}}
                                 </div>
                             </div>
                         </div>
@@ -190,11 +180,10 @@
                 </tbody>
             </table>
 
-            <div class="card" style="height: 16%; background-color: green;">
+            <div class="card" style="height: 11%; background-color: green;">
                 add space
             </div>
         </div>
-
 
     </div>
 
